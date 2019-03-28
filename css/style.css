@@ -1822,6 +1822,21 @@ h1, h2, h3, h4, h5,
   .main-menu {
     display: none !important; } }
 
-#firstBlock{
+#firstBlock {
+  height:300px;
+}
+#secondBlock{
+  height:300px;
+}
+#thirdBlock{
+  height:300px;
+}
+#fourthBlock{
+  height:300px;
+}
+#fifthBlock{
+  height:300px;
+}
+#sixthBlock{
   height:300px;
 }

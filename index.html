@@ -123,7 +123,89 @@
               <div>
                 <h3 id = "firstBlockTitle">iKOMO! Mug</h3>
                 <p id = "firstBlockText">Mug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on it</p>
-                <p id = "firstBlockLink"><a href="#">Click To Learn More</a></p>
+
+              </div>
+            </div>
+            <script>
+                document.getElementById('firstBlock').addEventListener("mousein",function(){
+                  $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
+                  $("#firstBlock").css("background-size","contain");
+                  $("#firstBlock").css("background-position","center center");
+                  $("#firstBlock").css("background-repeat","no-repeat");
+                  $("#firstBlockText").css("display","none");
+                  $("#firstBlockTitle").css("display","none");
+                  $("#firstBlockLink").css("display","none");
+                  $("#firstBlockIcon").css("display","none");
+              });
+              document.getElementById('firstBlockTitle').addEventListener("mousein",function(){
+                $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
+                $("#firstBlock").css("background-size","contain");
+                $("#firstBlock").css("background-position","center center");
+                $("#firstBlock").css("background-repeat","no-repeat");
+                $("#firstBlockText").css("display","none");
+                $("#firstBlockTitle").css("display","none");
+                $("#firstBlockLink").css("display","none");
+                $("#firstBlockIcon").css("display","none");
+            });
+            document.getElementById('firstBlockText').addEventListener("mousein",function(){
+              $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
+              $("#firstBlock").css("background-size","contain");
+              $("#firstBlock").css("background-position","center center");
+              $("#firstBlock").css("background-repeat","no-repeat");
+              $("#firstBlockText").css("display","none");
+              $("#firstBlockTitle").css("display","none");
+              $("#firstBlockLink").css("display","none");
+              $("#firstBlockIcon").css("display","none");
+          });
+              document.getElementById('firstBlock').addEventListener("mouseout",function(){
+                $("#firstBlock").css("background-image","none");
+                $("#firstBlockText").css("display","block");
+                $("#firstBlockTitle").css("display","block");
+                $("#firstBlockLink").css("display","block");
+                $("#firstBlockIcon").css("display","block");
+              });
+            </script>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+
+            <div  id = "secondBlock"class="unit-4 d-block">
+              <div id = "secondBlockIcon"class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-black-tie"></span></span>
+              </div>
+              <div>
+                <h3 id = "secondBlockTitle">iKOMO Tie</h3>
+                <p  id = "secondBlockText">Tie with iKOMO on itTie with iKOMO on itTie with iKOMO on itTie with iKOMO on it with iKOMO on it with iKOMO on it</p>
+              </div>
+            </div>
+            <script>
+              $("#secondBlock").hover(function(){
+                  $("#secondBlock").css("background-image","url('./images/secondBlockImage.png')");
+                  $("#secondBlock").css("background-size","contain");
+                  $("#secondBlock").css("background-position","center center");
+                  $("#secondBlock").css("background-repeat","no-repeat");
+                  $("#secondBlockText").css("display","none");
+                  $("#secondBlockTitle").css("display","none");
+                  $("#secondBlockLink").css("display","none");
+                  $("#secondBlockIcon").css("display","none");
+              });
+              document.getElementById('secondBlock').addEventListener("mouseout",function(){
+                $("#secondBlock").css("background-image","none");
+                $("#secondBlockText").css("display","block");
+                $("#secondBlockLink").css("display","block");
+                $("#secondBlockTitle").css("display","block");
+                $("#secondBlockIcon").css("display","block");
+              });
+            </script>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" >
+            <div class="unit-4 d-block">
+              <div class="unit-4-icon mb-3">
+                <span class="icon-wrap"><span class="text-primary icon-shopping_basket"></span></span>
+              </div>
+              <div>
+                <h3>User Monitoring</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+
               </div>
             </div>
             <script>
@@ -144,31 +226,6 @@
               });
             </script>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-
-            <div class="unit-4 d-block">
-              <div class="unit-4-icon mb-3">
-                <span class="icon-wrap"><span class="text-primary icon-store_mall_directory"></span></span>
-              </div>
-              <div>
-                <h3>Market Analysis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" >
-            <div class="unit-4 d-block">
-              <div class="unit-4-icon mb-3">
-                <span class="icon-wrap"><span class="text-primary icon-shopping_basket"></span></span>
-              </div>
-              <div>
-                <h3>User Monitoring</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
 
 
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
@@ -179,9 +236,26 @@
               <div>
                 <h3>Insurance Consulting</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+
               </div>
             </div>
+            <script>
+              $("#firstBlock").hover(function(){
+                  $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
+                  $("#firstBlock").css("background-repeat","none");
+                  $("#firstBlockText").css("display","none");
+                  $("#firstBlockTitle").css("display","none");
+                  $("#firstBlockLink").css("display","none");
+                  $("#firstBlockIcon").css("display","none");
+              });
+              document.getElementById('firstBlock').addEventListener("mouseout",function(){
+                $("#firstBlock").css("background-image","none");
+                $("#firstBlockText").css("display","block");
+                $("#firstBlockTitle").css("display","block");
+                $("#firstBlockLink").css("display","block");
+                $("#firstBlockIcon").css("display","block");
+              });
+            </script>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
@@ -192,7 +266,7 @@
               <div>
                 <h3>Customer Satistified</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+
               </div>
             </div>
 
@@ -207,7 +281,7 @@
               <div>
                 <h3>Plug &amp; Play</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
+
               </div>
             </div>
           </div>
@@ -288,7 +362,7 @@
           <div class="col-lg-5 ml-auto pl-lg-5">
             <h2 class="text-black mb-4">Create interactive prototypes</h2>
             <p class="mb-4">Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.</p>
-            <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            <p><a href="#" class="btn btn-primary">Click To Learn More</a></p>
           </div>
         </div>
 
