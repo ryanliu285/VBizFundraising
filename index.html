@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
@@ -109,25 +110,37 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Features</h2>
+            <h2 class="section-title mb-3">Our Products</h2>
           </div>
         </div>
         <div class="row align-items-stretch">
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
 
             <div id = "firstBlock" class="unit-4 d-block">
-              <div class="unit-4-icon mb-3">
+              <div class="unit-4-icon mb-3" id = "firstBlockIcon">
                 <span class="icon-wrap"><span class="text-primary icon-free_breakfast"></span></span>
               </div>
               <div>
-                <h3>iKOMO! Mug</h3>
-                <p>Mug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on it</p>
-                <p><a href="#">Learn More</a></p>
+                <h3 id = "firstBlockTitle">iKOMO! Mug</h3>
+                <p id = "firstBlockText">Mug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on itMug with iKOMO on it</p>
+                <p id = "firstBlockLink"><a href="#">Click To Learn More</a></p>
               </div>
             </div>
             <script>
               $("#firstBlock").hover(function(){
-
+                  $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
+                  $("#firstBlock").css("background-repeat","none");
+                  $("#firstBlockText").css("display","none");
+                  $("#firstBlockTitle").css("display","none");
+                  $("#firstBlockLink").css("display","none");
+                  $("#firstBlockIcon").css("display","none");
+              });
+              document.getElementById('firstBlock').addEventListener("mouseout",function(){
+                $("#firstBlock").css("background-image","none");
+                $("#firstBlockText").css("display","block");
+                $("#firstBlockTitle").css("display","block");
+                $("#firstBlockLink").css("display","block");
+                $("#firstBlockIcon").css("display","block");
               });
             </script>
           </div>
