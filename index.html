@@ -131,6 +131,10 @@
               </div>
             </div>
             <script>
+            $("#firstBlockText").css("pointer-events","none");
+            $("#firstBlockTitle").css("pointer-events","none");
+            $("#firstBlockLink").css("pointer-events","none");
+            $("#firstBlockIcon").css("pointer-events","none");
                 document.getElementById('firstBlock').addEventListener("mousein",function(){
                   $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
                   $("#firstBlock").css("background-size","contain");
@@ -141,26 +145,6 @@
                   $("#firstBlockLink").css("display","none");
                   $("#firstBlockIcon").css("display","none");
               });
-              document.getElementById('firstBlockTitle').addEventListener("mousein",function(){
-                $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
-                $("#firstBlock").css("background-size","contain");
-                $("#firstBlock").css("background-position","center center");
-                $("#firstBlock").css("background-repeat","no-repeat");
-                $("#firstBlockText").css("display","none");
-                $("#firstBlockTitle").css("display","none");
-                $("#firstBlockLink").css("display","none");
-                $("#firstBlockIcon").css("display","none");
-            });
-            document.getElementById('firstBlockText').addEventListener("mousein",function(){
-              $("#firstBlock").css("background-image","url('./images/firstBlockImage.png')");
-              $("#firstBlock").css("background-size","contain");
-              $("#firstBlock").css("background-position","center center");
-              $("#firstBlock").css("background-repeat","no-repeat");
-              $("#firstBlockText").css("display","none");
-              $("#firstBlockTitle").css("display","none");
-              $("#firstBlockLink").css("display","none");
-              $("#firstBlockIcon").css("display","none");
-          });
               document.getElementById('firstBlock').addEventListener("mouseout",function(){
                 $("#firstBlock").css("background-image","none");
                 $("#firstBlockText").css("display","block");
@@ -182,6 +166,10 @@
               </div>
             </div>
             <script>
+            $("#secondBlockText").css("pointer-events","none");
+            $("#secondBlockTitle").css("pointer-events","none");
+            $("#secondBlockLink").css("pointer-events","none");
+            $("#secondBlockIcon").css("pointer-events","none");
               $("#secondBlock").hover(function(){
                   $("#secondBlock").css("background-image","url('./images/secondBlockImage.png')");
                   $("#secondBlock").css("background-size","contain");
